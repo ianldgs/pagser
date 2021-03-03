@@ -20,7 +20,7 @@ const (
 //->fn(xxx)
 //->fn('xxx')
 //->fn('xxx\'xxx', 'xxx,xxx')
-var rxFunc = regexp.MustCompile("^\\s*([a-zA-Z]+)\\s*(\\(([^\\)]*)\\))?\\s*$")
+var rxFunc = regexp.MustCompile("^\\s*([a-zA-Z]+)\\s*(\\((.*)\\))?\\s*$")
 
 // tagTokenizer struct tag info
 type tagTokenizer struct {
