@@ -3,8 +3,8 @@ package main
 import (
 	"encoding/json"
 	"github.com/PuerkitoBio/goquery"
-	"github.com/foolin/pagser"
-	"github.com/foolin/pagser/extensions/markdown"
+	"github.com/ianldgs/pagser"
+	"github.com/ianldgs/pagser/extensions/markdown"
 	"log"
 )
 
@@ -39,7 +39,7 @@ type PageData struct {
 		ID     int    `pagser:"->attrEmpty(id, -1)"`
 		Name   string `pagser:"a"`
 		Url    string `pagser:"a->attr(href)"`
-		AbsUrl string `pagser:"a->absHref('https://github.com/foolin/pagser')"`
+		AbsUrl string `pagser:"a->absHref('https://github.com/ianldgs/pagser')"`
 	} `pagser:".navlink li"`
 	NavFirst struct {
 		ID   int    `pagser:"->attrEmpty(id, -1)"`

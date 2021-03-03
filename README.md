@@ -29,14 +29,14 @@
 ## Install
 
 ```bash
-go get -u github.com/foolin/pagser
+go get -u github.com/ianldgs/pagser
 ```
 
 Or get the specified version:
 ```bash
-go get github.com/foolin/pagser@{version}
+go get github.com/ianldgs/pagser@{version}
 ```
-The {version} release list: <https://github.com/foolin/pagser/releases>
+The {version} release list: <https://github.com/ianldgs/pagser/releases>
 
 
 ## Features
@@ -52,7 +52,7 @@ The {version} release list: <https://github.com/foolin/pagser/releases>
 
 ## Docs
 
-See [Pagser](https://pkg.go.dev/github.com/foolin/pagser)
+See [Pagser](https://pkg.go.dev/github.com/ianldgs/pagser)
 
 
 ## Usage
@@ -63,7 +63,7 @@ package main
 
 import (
 	"encoding/json"
-	"github.com/foolin/pagser"
+	"github.com/ianldgs/pagser"
 	"log"
 )
 
@@ -238,7 +238,7 @@ type ExamData struct {
 
 > - ...
 
-More builtin functions see docs: <https://pkg.go.dev/github.com/foolin/pagser?tab=doc#BuiltinFunctions>
+More builtin functions see docs: <https://pkg.go.dev/github.com/ianldgs/pagser?tab=doc#BuiltinFunctions>
 
 ### Extension functions
 
@@ -248,7 +248,7 @@ More builtin functions see docs: <https://pkg.go.dev/github.com/foolin/pagser?ta
 
 Extensions function need register, like:
 ```golang
-import "github.com/foolin/pagser/extensions/markdown"
+import "github.com/ianldgs/pagser/extensions/markdown"
 
 p := pagser.New()
 
@@ -361,7 +361,7 @@ Lookup function priority order:
 
 
 ### More Examples
-See advance example: <https://github.com/foolin/pagser/tree/master/_examples/advance>
+See advance example: <https://github.com/ianldgs/pagser/tree/master/_examples/advance>
 
 ## Implicit type conversion
 Automatic implicit type conversion, Output result string convert to int, int64, float64...
@@ -395,7 +395,7 @@ package main
 
 import (
 	"encoding/json"
-	"github.com/foolin/pagser"
+	"github.com/ianldgs/pagser"
 	"log"
 	"net/http"
 )
@@ -539,8 +539,8 @@ collector.OnHTML("body", func(e *colly.HTMLElement) {
 
 ```
 
-- [See Examples](https://github.com/foolin/pagser/tree/master/_examples)
-- [See Tests](https://github.com/foolin/pagser/blob/master/parse_test.go)
+- [See Examples](https://github.com/ianldgs/pagser/tree/master/_examples)
+- [See Tests](https://github.com/ianldgs/pagser/blob/master/parse_test.go)
 
 ## Dependencies
 
@@ -556,11 +556,11 @@ collector.OnHTML("body", func(e *colly.HTMLElement) {
 
 
 
-[go-doc]: https://pkg.go.dev/github.com/foolin/pagser
-[go-doc-img]: https://godoc.org/github.com/foolin/pagser?status.svg
-[travis]: https://travis-ci.org/foolin/pagser
-[travis-img]: https://travis-ci.org/foolin/pagser.svg?branch=master
-[go-report-card]: https://goreportcard.com/report/github.com/foolin/pagser
-[go-report-card-img]: https://goreportcard.com/badge/github.com/foolin/pagser
-[cov-img]: https://codecov.io/gh/foolin/pagser/branch/master/graph/badge.svg
-[cov]: https://codecov.io/gh/foolin/pagser
+[go-doc]: https://pkg.go.dev/github.com/ianldgs/pagser
+[go-doc-img]: https://godoc.org/github.com/ianldgs/pagser?status.svg
+[travis]: https://travis-ci.org/ianldgs/pagser
+[travis-img]: https://travis-ci.org/ianldgs/pagser.svg?branch=master
+[go-report-card]: https://goreportcard.com/report/github.com/ianldgs/pagser
+[go-report-card-img]: https://goreportcard.com/badge/github.com/ianldgs/pagser
+[cov-img]: https://codecov.io/gh/ianldgs/pagser/branch/master/graph/badge.svg
+[cov]: https://codecov.io/gh/ianldgs/pagser

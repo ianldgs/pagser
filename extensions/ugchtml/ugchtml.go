@@ -2,7 +2,7 @@ package ugchtml
 
 import (
 	"github.com/PuerkitoBio/goquery"
-	"github.com/foolin/pagser"
+	"github.com/ianldgs/pagser"
 	"github.com/microcosm-cc/bluemonday"
 )
 

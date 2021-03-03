@@ -15,7 +15,7 @@ type BuiltinFunctions struct {
 
 // AbsHref absHref(baseUrl) get element attribute name `href`, and convert to absolute url, return *URL.
 // `baseUrl` is the base url like `https://example.com/`.
-//	//<a href="/foolin/pagser">Pagser</a>
+//	//<a href="/ianldgs/pagser">Pagser</a>
 //	struct {
 //		Example string `pagser:".selector->absHref('https://github.com/')"`
 //	}
@@ -36,7 +36,7 @@ func (builtin BuiltinFunctions) AbsHref(selection *goquery.Selection, args ...st
 
 // Attr attr(name, defaultValue='') get element attribute value, return string.
 // outerHtml() get element  outer html, return string.
-//	//<a href="https://github.com/foolin/pagser">Pagser</a>
+//	//<a href="https://github.com/ianldgs/pagser">Pagser</a>
 //	struct {
 //		Example string `pagser:".selector->attr(href)"`
 //	}
@@ -82,7 +82,7 @@ func (builtin BuiltinFunctions) AttrConcat(node *goquery.Selection, args ...stri
 }
 
 // AttrEmpty attrEmpty(name, defaultValue) get element attribute value, return string.
-//	//<a href="https://github.com/foolin/pagser">Pagser</a>
+//	//<a href="https://github.com/ianldgs/pagser">Pagser</a>
 //	struct {
 //		Example string `pagser:".selector->AttrEmpty(href, '#')"`
 //	}
@@ -131,7 +131,7 @@ func (builtin BuiltinFunctions) AttrSplit(node *goquery.Selection, args ...strin
 }
 
 // EachAttr eachAttr(name) get each element attribute value, return []string.
-//	//<a href="https://github.com/foolin/pagser">Pagser</a>
+//	//<a href="https://github.com/ianldgs/pagser">Pagser</a>
 //	struct {
 //		Examples []string `pagser:".selector->eachAttr(href)"`
 //	}
@@ -148,7 +148,7 @@ func (builtin BuiltinFunctions) EachAttr(node *goquery.Selection, args ...string
 }
 
 // EachAttrEmpty eachAttrEmpty(name, defaultValue) get each element attribute value, return []string.
-//	//<a href="https://github.com/foolin/pagser">Pagser</a>
+//	//<a href="https://github.com/ianldgs/pagser">Pagser</a>
 //	struct {
 //		Examples []string `pagser:".selector->eachAttrEmpty(href, '#')"`
 //	}

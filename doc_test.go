@@ -137,7 +137,7 @@ func ExamplePagser_ParseSelection() {
 }
 
 func ExamplePagser_ParseReader() {
-	resp, err := http.Get("https://raw.githubusercontent.com/foolin/pagser/master/_examples/pages/demo.html")
+	resp, err := http.Get("https://raw.githubusercontent.com/ianldgs/pagser/master/_examples/pages/demo.html")
 	if err != nil {
 		log.Fatal(err)
 	}

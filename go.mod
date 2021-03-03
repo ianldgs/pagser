@@ -1,4 +1,4 @@
-module github.com/foolin/pagser
+module github.com/ianldgs/pagser
 
 go 1.14
 

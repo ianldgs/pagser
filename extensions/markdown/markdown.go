@@ -3,7 +3,7 @@ package markdown
 import (
 	"bytes"
 	"github.com/PuerkitoBio/goquery"
-	"github.com/foolin/pagser"
+	"github.com/ianldgs/pagser"
 	"github.com/mattn/godown"
 	"regexp"
 	"strings"

@@ -2,7 +2,7 @@ package main
 
 import (
 	"encoding/json"
-	"github.com/foolin/pagser"
+	"github.com/ianldgs/pagser"
 	"log"
 )
 
